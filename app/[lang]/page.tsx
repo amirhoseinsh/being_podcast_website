@@ -40,9 +40,9 @@ export default async function Page({ params }: {params: params}) {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-8 text-center animate-fade-in">
         <div className="flex gap-4">
-         <Link href={"https://youtube.com"}><Image src="/images/youtube.svg" width={24} height={24} alt="youtube icon"/></Link>
-         <Link href={"https://instagram.com"}><Image src="/images/instagram.svg" width={24} height={24} alt="instagram icon"/></Link>
-         <Link href={"https://discord.com"}><Image src="/images/spotify.svg" width={24} height={24} alt="spotify icon"/></Link>
+         <Link href={"https://www.youtube.com/@beingpod"}><Image src="/images/youtube.svg" width={24} height={24} alt="youtube icon"/></Link>
+         <Link href={"https://instagram.com/beingpodcast"}><Image src="/images/instagram.svg" width={24} height={24} alt="instagram icon"/></Link>
+         <Link href={"https://open.spotify.com/show/6Bm7znaOeMn6BFWtwg24M6"}><Image src="/images/spotify.svg" width={24} height={24} alt="spotify icon"/></Link>
         </div>
       </div>
     </div>
