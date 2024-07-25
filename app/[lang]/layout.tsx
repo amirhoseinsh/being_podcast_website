@@ -48,7 +48,7 @@ const englishMetadata: Metadata = {
 
 const metadata: Metadata = {
   title: {
-    default: "پادکست بودن",
+    default: "پادکست فارسی بودن",
     template: "%s | beingpodcast.xyz",
   },
   description: "پادکست بودن به میزبانی امیرحسین شیرانی و پارسا بزرگانی",
