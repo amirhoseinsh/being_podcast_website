@@ -105,7 +105,7 @@ type params = {
     lang: string
 }
 
-export async function generateMetadata({ params }: params) {
+export async function generateMetadata({ params }: {params: params}) {
   return params.lang === "en" ? englishMetadata : metadata;
 }
 
