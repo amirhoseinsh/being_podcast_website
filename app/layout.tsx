@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://beingpodcast.xyz/og.png",
-        width: 1920,
+        width: 1080,
         height: 1080,
       },
     ],
