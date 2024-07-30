@@ -3,6 +3,7 @@ import React from "react";
 import Particles from "../components/particles";
 import Image from "next/image";
 import { getDictionary } from './dictionaries'
+import LocaleSwitcher from "./LocalSwitcher";
 
 const navigation = [
   {name: "Episodes", href: "/episodes"},
@@ -14,10 +15,10 @@ type params = {
 
 export default async function Page({ params }: {params: params}) {
   const dict = await getDictionary(params.lang) // en
-
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className="my-16 animate-fade-in">
+      <LocaleSwitcher/>
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item) => (
             <Link
@@ -44,6 +45,7 @@ export default async function Page({ params }: {params: params}) {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-8 text-center animate-fade-in">
         <div className="flex gap-4">
+         <Link href={"https://podcasts.apple.com/us/podcast/پادکست-فارسی-بودن/id1759999496"}><Image src="/images/apple-podcast.svg" width={24} height={24} alt="youtube icon"/></Link> 
          <Link href={"https://www.youtube.com/@beingpod"}><Image src="/images/youtube.svg" width={24} height={24} alt="youtube icon"/></Link>
          <Link href={"https://instagram.com/beingpodcast"}><Image src="/images/instagram.svg" width={24} height={24} alt="instagram icon"/></Link>
          <Link href={"https://open.spotify.com/show/6Bm7znaOeMn6BFWtwg24M6"}><Image src="/images/spotify.svg" width={24} height={24} alt="spotify icon"/></Link>
