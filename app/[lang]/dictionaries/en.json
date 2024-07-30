@@ -1,5 +1,11 @@
 {
     "title": {
       "main": "Being Podcast"
+    },
+    "episode_page": {
+      "main": "Episodes",
+      "title_1": "Episode One",
+      "title_2": "Episode Two",
+      "title_3": "Episode Three"
     }
   }
