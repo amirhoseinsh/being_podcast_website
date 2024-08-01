@@ -4,14 +4,16 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
 import { i18n, type Locale } from "../../i18n-config";
-import { US, IR /* Add other country flags as needed */ } from 'country-flag-icons/react/3x2';
+import {
+  US,
+  IR /* Add other country flags as needed */,
+} from "country-flag-icons/react/3x2";
 
 // Import the necessary flag components
 
-
 export default function LocaleSwitcher() {
   const pathName = usePathname();
-  const currentLocale = pathName?.split("/")[1] || i18n.defaultLocale;
+  const currentLocale: Locale = (pathName?.split("/")[1] as Locale) || i18n.defaultLocale;
 
   const redirectedPathName = (locale: Locale) => {
     if (!pathName) return "/";
@@ -51,13 +53,10 @@ export default function LocaleSwitcher() {
 
   return (
     <div className="relative">
-      {/* <label htmlFor="localeSelect" className="text-sm duration-500 text-zinc-500">
-        Language:
-      </label> */}
       <div className="relative inline-block">
         <div
           className={`bg-white border rounded-md shadow-md w-16 absolute z-10 ${
-            isDropdownOpen ? 'block' : 'hidden'
+            isDropdownOpen ? "block" : "hidden"
           }`}
         >
           {localeOptions}
