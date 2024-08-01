@@ -1,24 +1,25 @@
 import { Metadata } from "next";
 
-
 type params = {
-    lang: string
-}
-
+  lang: string;
+};
 
 export default function RootLayout({
-  children, params
+  children,
+  params,
 }: {
   children: React.ReactNode;
-  params: params
+  params: params;
 }) {
   return (
-   <section>
-        <div className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-          }`}
+    <section>
+      <div
+        className={`bg-black ${
+          process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+        }`}
       >
-        {children}
-        </div>
-      </section>
+        \{children}
+      </div>
+    </section>
   );
 }

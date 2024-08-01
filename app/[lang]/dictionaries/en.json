@@ -1,11 +1,24 @@
 {
     "title": {
-      "main": "Being Podcast"
+      "main": "Being Podcast",
+      "navigation": {
+        "title_1": "Episodes",
+        "title_2": "Document",
+        "title_3": "Objective"
+      }
     },
     "episode_page": {
       "main": "Episodes",
       "title_1": "Episode One",
       "title_2": "Episode Two",
       "title_3": "Episode Three"
+    },
+    "documents": {
+      "title": "Documents",
+      "description": "Here are the documents for the 3F (Fund for Found) Project",
+      "section_1": "Documentation System",
+      "section_2": "Product Research",
+      "section_3": "Crypto Reports",
+      "section_4": "Community"
     }
   }

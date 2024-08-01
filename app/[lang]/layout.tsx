@@ -1,4 +1,5 @@
 import "../../global.css";
+import '@radix-ui/themes/styles.css';
 import { Inter } from "next/font/google";
 import LocalFont from "next/font/local";
 import { Metadata } from "next";
@@ -97,6 +98,16 @@ const calSans = LocalFont({
   variable: "--font-calsans",
 });
 
+const peydaRegular = LocalFont({
+  src: "../../public/fonts/Peyda-Regular.ttf",
+  variable: "--font-inter"
+})
+
+const peyda = LocalFont({
+  src: "../../public/fonts/Peyda-Regular.ttf",
+  variable: "--font-calsans"
+})
+
 export async function generateStaticParams() {
     return [{ lang: 'en' }, { lang: 'fa' }]
   }
@@ -116,7 +127,7 @@ export default function RootLayout({
   params: params
 }) {
   return (
-    <html lang={params.lang} className={[inter.variable, calSans.variable].join(" ")}>
+    <html lang={params.lang} className={params.lang=="en" ? [inter.variable, calSans.variable].join(" ") : [peydaRegular.variable, peyda.variable].join(" ")} dir={params.lang=="en" ? "ltr": "rtl"}>
       <head>
         <Analytics />
       </head>
@@ -124,7 +135,7 @@ export default function RootLayout({
         className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}
       >
-        {children}
+          {children}
       </body>
     </html>
   );
