@@ -18,7 +18,6 @@ export default async function Page({ params }: { params: params }) {
   ];
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
-      {/* <div className=""> */}
       <nav className="my-8 md:my-16 animate-fade-in">
         <ul className="flex items-center my-4 justify-center gap-4">
           {navigation.map((item) => (
@@ -98,7 +97,6 @@ export default async function Page({ params }: { params: params }) {
         <div className="flex my-6 justify-center">
           <LocaleSwitcher />
         </div>
-        {/* </div> */}
       </div>
     </div>
   );

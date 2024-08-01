@@ -27,8 +27,8 @@ export default function LocaleSwitcher() {
 
   // Define country flags for each locale
   const countryFlags: Record<Locale, JSX.Element> = {
-    en: <US title="United States" className="flag-icon" />,
-    fa: <IR title="Iran" className="flag-icon" />,
+    en: <US title="United States" className="flag-icon overflow:visible" />,
+    fa: <IR title="Iran" className="flag-icon overflow:visible" />,
     // Add other country codes and corresponding flags
   };
 
