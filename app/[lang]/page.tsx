@@ -93,6 +93,14 @@ export default async function Page({ params }: { params: params }) {
               alt="spotify icon"
             />
           </Link>
+          <Link href={"https://castbox.fm/channel/پادکست-فارسی-بودن-id6236693"}>
+            <Image
+              src="/images/castbox.svg"
+              width={24}
+              height={24}
+              alt="castbox icon"
+            />
+          </Link>
         </div>
         <div className="flex my-6 justify-center">
           <LocaleSwitcher />
