@@ -97,8 +97,8 @@ export default async function Page({ params }: { params: params }) {
           <Link href={"https://castbox.fm/channel/پادکست-فارسی-بودن-id6236693"}>
             <Image
               src="/images/castbox.svg"
-              width={24}
-              height={24}
+              width={23}
+              height={23}
               alt="castbox icon"
             />
           </Link>

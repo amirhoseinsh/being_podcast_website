@@ -10,6 +10,14 @@ const englishMetadata: Metadata = {
     default: "Being Podcast",
     template: "%s | beingpodcast.xyz",
   },
+  metadataBase: new URL('https://beingpodcast.xyz'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en',
+      'fa': '/fa',
+    },
+  },
   description: "Being Podcast hosted by Amirhosein Shirani and Parsa Bozorgani",
   openGraph: {
     title: "beingpodcast.xyz",
@@ -52,6 +60,15 @@ const metadata: Metadata = {
     default: "پادکست فارسی بودن",
     template: "%s | beingpodcast.xyz",
   },
+  metadataBase: new URL('https://beingpodcast.xyz'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en',
+      'fa': '/fa',
+    },
+  },
+  publisher: 'Wish Work',
   description: "پادکست بودن به میزبانی امیرحسین شیرانی و پارسا بزرگانی",
   openGraph: {
     title: "beingpodcast.xyz",
@@ -61,7 +78,7 @@ const metadata: Metadata = {
     siteName: "beingpodcast.xyz",
     images: [
       {
-        url: "https://beingpodcast.xyz/og.png",
+        url: "https://beingpodcast.xyz/images/og.png",
         width: 1080,
         height: 1080,
       },
