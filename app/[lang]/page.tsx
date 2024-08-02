@@ -23,7 +23,8 @@ export default async function Page({ params }: { params: params }) {
           {navigation.map((item) => (
             <Link
               key={item.href}
-              href={item.href}
+              // locale={params.lang}
+              href={`/${params.lang}${item.href}`}
               className="transition font-display delay-150 ease-in-out hover:-translate-y-1 text-sm mdm-4 rounded-md px-4 py-2 duration-500 text-zinc-500 border-2 border-zinc-500 hover:text-zinc-300 hover:border-zinc-300"
             >
               {item.name}

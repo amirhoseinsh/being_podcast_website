@@ -7,6 +7,11 @@ const nextConfig = {
 	experimental: {
 		mdxRs: true,
 	},
+	// i18n: {
+	// 	locales: ['en', 'fa'],
+	// 	defaultLocale: 'en',
+	// 	localeDetection: false,
+	//   }
 };
 
 export default nextConfig;
