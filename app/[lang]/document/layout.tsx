@@ -42,15 +42,12 @@ const englishMetadata: Metadata = {
 };
 
 const metadata: Metadata = {
-  title: {
-    default: "پادکست فارسی بودن",
-    template: "%s | beingpodcast.xyz",
-  },
-  description: "پادکست بودن به میزبانی امیرحسین شیرانی و پارسا بزرگانی",
+  title: "اسناد",
+  description: "اسناد مربوط به پادکست بودن",
   openGraph: {
-    title: "beingpodcast.xyz",
+    title: "اسناد",
     description:
-      "پادکست بودن به میزبانی امیرحسین شیرانی و پارسا بزرگانی",
+      "اسناد مربوط به پادکست بودن",
     url: "https://beingpodcast.xyz",
     siteName: "beingpodcast.xyz",
     images: [
@@ -75,7 +72,7 @@ const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Being Podcast Document",
+    title: "اسناد پادکست فارسی بودن",
     card: "summary_large_image",
   },
   icons: {
