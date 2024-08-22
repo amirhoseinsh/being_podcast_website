@@ -1,6 +1,6 @@
 import React from "react";
 import { getDictionary } from "../dictionaries";
-
+import Navigation from "@/app/components/navigation";
 type params = {
   lang: string;
 };
@@ -9,6 +9,7 @@ export default async function Episodes({ params }: { params: params }) {
   const dict = await getDictionary(params.lang); // en
   return (
     <div className="flex flex-col items-center justify-center overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+      <Navigation dict={dict} lang={params.lang}/>
         <div className="m-8">
           <h1 className="text-white text-5xl">{dict.episode_page.main}</h1>
         </div>
