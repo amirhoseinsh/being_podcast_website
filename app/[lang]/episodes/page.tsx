@@ -8,34 +8,34 @@ type params = {
 export default async function Episodes({ params }: { params: params }) {
   const dict = await getDictionary(params.lang); // en
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
-      <h1 className="text-white text-5xl">{dict.episode_page.main}</h1>
-      <div className="mt-4 p-4">
-        <p className="mb-2 text-zinc-500">{dict.episode_page.title_3}</p>
-        <iframe
-          src="https://podcasters.spotify.com/pod/show/beinglab/embed/episodes/ep-e2mj5fl"
-          height="150px"
-          width="400px"
-          frameBorder="0"
-          scrolling="no"
-        ></iframe>
-        <p className="mb-2 text-zinc-500">{dict.episode_page.title_2}</p>
-        <iframe
-          src="https://podcasters.spotify.com/pod/show/beinglab/embed/episodes/ep-e2mi33t/a-abf3sb0"
-          height="150px"
-          width="400px"
-          frameBorder="0"
-          scrolling="no"
-        ></iframe>
-        <p className="mb-2 text-zinc-500">{dict.episode_page.title_1}</p>
-        <iframe
-          src="https://podcasters.spotify.com/pod/show/beinglab/embed/episodes/ep-e2mdrf2/a-abeuj89"
-          height="150px"
-          width="400px"
-          frameBorder="0"
-          scrolling="no"
-        ></iframe>
-      </div>
+    <div className="flex flex-col items-center justify-center overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+        <div className="m-8">
+          <h1 className="text-white text-5xl">{dict.episode_page.main}</h1>
+        </div>
+          <div className="mt-12 mb-4 flex flex-col w-full items-center justify-center">  
+            <iframe className="w-1/3" src="https://embed.acast.com/66c35ec6c657d26e5df049b9/66c35ecbc657d26e5df04bf3" frameBorder="0" width="100%" height="80px"></iframe>
+          </div>
+          <div className="m-4 flex flex-col w-full items-center justify-center">
+            <iframe className="w-1/3" src="https://embed.acast.com/66c35ec6c657d26e5df049b9/66c35ecbc657d26e5df04bf4" frameBorder="0" width="100%" height="80px"></iframe>
+          </div>
+          <div className="m-4 flex flex-col w-full items-center justify-center">
+            <iframe className="w-1/3" src="https://embed.acast.com/66c35ec6c657d26e5df049b9/66c35ecbc657d26e5df04bf5" frameBorder="0" width="100%" height="80px"></iframe>
+          </div>
+          <div className="m-4 flex flex-col w-full items-center justify-center">
+            <iframe className="w-1/3" src="https://embed.acast.com/66c35ec6c657d26e5df049b9/66c35ecbc657d26e5df04bf6" frameBorder="0" width="100%" height="80px"></iframe>
+          </div>
+          <div className="m-4 flex flex-col w-full items-center justify-center">
+            <iframe className="w-1/3" src="https://embed.acast.com/66c35ec6c657d26e5df049b9/66c35ecbc657d26e5df04bf7" frameBorder="0" width="100%" height="80px"></iframe>
+          </div>
+          <div className="m-4 flex flex-col w-full items-center justify-center">
+            <iframe className="w-1/3" src="https://embed.acast.com/66c35ec6c657d26e5df049b9/66c35ecbc657d26e5df04bf8" frameBorder="0" width="100%" height="80px"></iframe>
+          </div>
+          <div className="m-4 flex flex-col w-full items-center justify-center">
+            <iframe className="w-1/3" src="https://embed.acast.com/66c35ec6c657d26e5df049b9/66c35ecbc657d26e5df04bf9" frameBorder="0" width="100%" height="80px"></iframe>
+          </div>
+          <div className="m-4 flex flex-col w-full items-center justify-center">
+            <iframe className="w-1/3" src="https://embed.acast.com/66c35ec6c657d26e5df049b9/66c35ecbc657d26e5df04bfa" frameBorder="0" width="100%" height="80px"></iframe>
+          </div>
     </div>
   );
 }
