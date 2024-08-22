@@ -1,5 +1,6 @@
 import React from "react";
 import { getDictionary } from "../dictionaries";
+import Navigation from "@/app/components/navigation";
 // import { Box, Text, Card } from "@radix-ui/themes";
 import {
   ArrowDownOnSquareIcon,
@@ -16,7 +17,8 @@ type params = {
 export default async function Episodes({ params }: { params: params }) {
   const dict = await getDictionary(params.lang); // en
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+    <div className="flex flex-col h-screen items-center overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+      <Navigation dict={dict} lang={params.lang}/>
       <div className="m-8 items-center">
         <div>
           <h1 className="text-5xl text-zinc-500">{dict.documents.title}</h1>
