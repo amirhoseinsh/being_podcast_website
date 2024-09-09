@@ -27,10 +27,10 @@ export default async function Episodes({ params }: { params: params }) {
           <p className="">
             {dict.documents.description}
           </p>
-          <div className="p-4 m-2 group flex flex-row border-4 border-zinc-500 rounded-md hover:cursor-pointer hover:border-white hover:text-white">
+          <Link href="/document/calendar" className="p-4 m-2 group flex flex-row border-4 border-zinc-500 rounded-md hover:cursor-pointer hover:border-white hover:text-white">
             <ArrowDownOnSquareIcon className="size-5 text-zinc-500 mr-2 group-hover:text-white" />
             <p className="">{dict.documents.section_1}</p>
-          </div>
+          </Link>
           <div className="p-4 m-2 group flex flex-row border-4 border-zinc-500 rounded-md hover:cursor-pointer hover:border-white hover:text-white">
             <BeakerIcon className="size-5 text-zinc-500 mr-2 group-hover:text-white" />
             <p className="">{dict.documents.section_2}</p>
@@ -43,7 +43,7 @@ export default async function Episodes({ params }: { params: params }) {
             <GlobeAltIcon className="size-5 text-zinc-500 mr-2 group-hover:text-white" />
             <p className="">{dict.documents.section_4}</p>
           </div>
-          <Link href="/documents/resources" className="p-4 m-2 group flex flex-row border-4 border-zinc-500 rounded-md hover:cursor-pointer hover:border-white hover:text-white">
+          <Link href="/document/resources" className="p-4 m-2 group flex flex-row border-4 border-zinc-500 rounded-md hover:cursor-pointer hover:border-white hover:text-white">
             <BookOpenIcon className="size-5 text-zinc-500 mr-2 group-hover:text-white" />
             <p className="">{dict.documents.section_5}</p>
           </Link>
